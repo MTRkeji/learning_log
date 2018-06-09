@@ -1,0 +1,57 @@
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 09, 2018 - 11:31:57
+Django version 1.11, using settings 'learning_log.settings'
+Starting development server at http://0:80/
+Quit the server with CONTROL-C.
+Unknown command: 'runservever'
+Type 'manage.py help' for usage.
+[09/Jun/2018 12:06:55] "GET / HTTP/1.1" 200 1910
+Not Found: /favicon.ico
+[09/Jun/2018 12:06:56] "GET /favicon.ico HTTP/1.1" 404 3182
+[09/Jun/2018 12:07:06] "GET / HTTP/1.1" 200 1910
+[09/Jun/2018 12:07:11] "GET /users/register/ HTTP/1.1" 200 2685
+Not Found: /favicon.ico
+[09/Jun/2018 12:07:11] "GET /favicon.ico HTTP/1.1" 404 3182
+[09/Jun/2018 12:07:14] "GET /users/login/ HTTP/1.1" 200 2421
+Not Found: /favicon.ico
+[09/Jun/2018 12:07:15] "GET /favicon.ico HTTP/1.1" 404 3182
+[09/Jun/2018 12:07:33] "POST /users/login/ HTTP/1.1" 302 0
+[09/Jun/2018 12:07:33] "GET / HTTP/1.1" 200 1894
+Not Found: /favicon.ico
+[09/Jun/2018 12:07:34] "GET /favicon.ico HTTP/1.1" 404 3182
+[09/Jun/2018 12:07:36] "GET /topics/ HTTP/1.1" 200 2023
+Not Found: /favicon.ico
+[09/Jun/2018 12:07:37] "GET /favicon.ico HTTP/1.1" 404 3182
+[09/Jun/2018 12:07:41] "GET /topics/1/ HTTP/1.1" 200 3170
+Not Found: /favicon.ico
+[09/Jun/2018 12:07:42] "GET /favicon.ico HTTP/1.1" 404 3182
+[09/Jun/2018 12:08:14] "GET /users/login HTTP/1.1" 301 0
+[09/Jun/2018 12:08:41] "GET /topics/1 HTTP/1.1" 301 0
+[09/Jun/2018 12:08:41] "GET /topics/1 HTTP/1.1" 301 0
+[09/Jun/2018 12:10:51] "GET / HTTP/1.1" 200 1894
+[09/Jun/2018 12:10:53] "GET / HTTP/1.1" 200 1894
+[09/Jun/2018 12:11:07] "GET / HTTP/1.1" 200 1894
+Not Found: /favicon.ico
+[09/Jun/2018 12:11:07] "GET /favicon.ico HTTP/1.1" 404 3182
+Not Found: /favicon.ico
+[09/Jun/2018 12:11:08] "GET /favicon.ico HTTP/1.1" 404 3182
+[09/Jun/2018 12:11:27] "GET /users/register/ HTTP/1.1" 200 2669
+Not Found: /favicon.ico
+[09/Jun/2018 12:11:27] "GET /favicon.ico HTTP/1.1" 404 3182
+[09/Jun/2018 12:12:06] "GET / HTTP/1.1" 200 1910
+[09/Jun/2018 12:44:30] "GET / HTTP/1.1" 200 1910
+[09/Jun/2018 13:07:35] "GET / HTTP/1.1" 200 1910
+[09/Jun/2018 13:09:09] "GET / HTTP/1.1" 200 1910
+[09/Jun/2018 13:38:09] "GET / HTTP/1.1" 200 1910
+Invalid HTTP_HOST header: 'clientapi.ipip.net'. You may need to add u'clientapi.ipip.net' to ALLOWED_HOSTS.
+[09/Jun/2018 13:48:08] "GET http://clientapi.ipip.net/echo.php?info=1234567890 HTTP/1.1" 400 61143
+[2018-06-09 13:48:08,320] - Broken pipe from ('139.162.88.63', 41914)
+
+Invalid HTTP_HOST header: 'www.baidu.com'. You may need to add u'www.baidu.com' to ALLOWED_HOSTS.
+[09/Jun/2018 14:46:15] "GET http://www.baidu.com/cache/global/img/gs.gif HTTP/1.1" 400 60792
+[09/Jun/2018 15:16:30] "GET / HTTP/1.1" 200 1910
+[09/Jun/2018 15:53:38] "GET / HTTP/1.1" 200 1910
+Invalid HTTP_HOST header: '39.107.38.47:2049'. You may need to add u'39.107.38.47' to ALLOWED_HOSTS.
+[09/Jun/2018 15:57:51] "GET / HTTP/1.1" 400 60331
