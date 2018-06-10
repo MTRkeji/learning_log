@@ -33,3 +33,10 @@ class Software(models.Model):
     date_added = models.DateTimeField(auto_now_add=True)
     def __str__(self):
         return self.name
+class Tip(models.Model):
+    """首页条目"""
+    name = models.CharField(max_length=200)
+    links = models.CharField(max_length=200)
+    date_added = models.DateTimeField(auto_now_add=True)
+    def __str__(self):
+        return self.name

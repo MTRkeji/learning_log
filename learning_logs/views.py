@@ -1,6 +1,6 @@
 #-*- coding: UTF-8 -*-
 from django.shortcuts import render
-from .models import Topic,Entry,Software
+from .models import Topic,Entry,Software,Tip
 from .forms import TopicForm,EntryForm
 from django.http import HttpResponseRedirect,Http404
 from django.core.urlresolvers import reverse
@@ -11,7 +11,9 @@ def check_topic_owner(request,topic):
 # Create your views here.
 def index(request):
     """主页"""
-    return render(request,'learning_logs/index.html')
+    tips = Tip.objects.all().order_by('-date_added')
+    context = {'tips':tips}
+    return render(request,'learning_logs/index.html',context)
 @login_required
 def topics(request):
     """所有主题"""

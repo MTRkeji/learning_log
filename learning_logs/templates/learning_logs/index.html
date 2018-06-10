@@ -7,9 +7,9 @@
 {% block content %}
   <h2>
     <ul>
-      <li><a href="http://cet.neea.edu.cn/cet/">四六级成绩查询</a></li>
-      <li><a href="http://cjcx.neea.edu.cn/html1/folder/1508/
-      206-1.htm?sid=300">全国计算机等级考试成绩查询</a></li>
+      {% for tip in tips %}
+      <li><a href="{{tip.links}}">{{tip}}</a></li>
+      {% endfor %}
     </ul>
   </h2>
   <h2>
