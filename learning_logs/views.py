@@ -5,6 +5,7 @@ from .forms import TopicForm,EntryForm
 from django.http import HttpResponseRedirect,Http404
 from django.core.urlresolvers import reverse
 from django.contrib.auth.decorators import login_required
+num = 0
 def check_topic_owner(request,topic):
     if topic.owner != request.user:
         raise Http404
@@ -12,7 +13,9 @@ def check_topic_owner(request,topic):
 def index(request):
     """主页"""
     tips = Tip.objects.all().order_by('-date_added')
-    context = {'tips':tips}
+    global num
+    num = num + 1
+    context = {'tips':tips,'num':num}
     return render(request,'learning_logs/index.html',context)
 @login_required
 def topics(request):

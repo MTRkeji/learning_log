@@ -2,6 +2,7 @@
 {% block header %}
   <div class="jumbotron">
     <h1>Welcome To MTR's Home</h1>
+    <h3>你是第{{num}}位访客。</h3>
   </div>
 {% endblock header %}
 {% block content %}
@@ -11,7 +12,5 @@
       <li><a href="{{tip.links}}">{{tip}}</a></li>
       {% endfor %}
     </ul>
-  </h2>
-  <h2>
   </h2>
 {% endblock content %}
