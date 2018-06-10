@@ -1,16 +1,17 @@
 {% extends "learning_logs/base.html" %}
 {% block header %}
   <div class="jumbotron">
-    <h1>Track your learning.</h1>
+    <h1>Welcome To MTR's Home</h1>
   </div>
 {% endblock header %}
 {% block content %}
   <h2>
-    <a href="{% url 'users:register' %}">Register an account</a> to make
-    your owm Learning Log,and list the topics you`re learning about.
+    <ul>
+      <li><a href="http://cet.neea.edu.cn/cet/">四六级成绩查询</a></li>
+      <li><a href="http://cjcx.neea.edu.cn/html1/folder/1508/
+      206-1.htm?sid=300">全国计算机等级考试成绩查询</a></li>
+    </ul>
   </h2>
   <h2>
-    Whenever you learn something new about a topic,make an entry
-    summarizing what you`ve learned.
   </h2>
 {% endblock content %}

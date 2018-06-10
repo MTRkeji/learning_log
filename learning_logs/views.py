@@ -1,6 +1,6 @@
 #-*- coding: UTF-8 -*-
 from django.shortcuts import render
-from .models import Topic,Entry
+from .models import Topic,Entry,Software
 from .forms import TopicForm,EntryForm
 from django.http import HttpResponseRedirect,Http404
 from django.core.urlresolvers import reverse
@@ -71,3 +71,8 @@ def edit_entry(request,entry_id):
             return HttpResponseRedirect(reverse('learning_logs:topic',args=[topic.id]))
     context = {'topic':topic,'entry':entry,'form':form}
     return render(request,'learning_logs/edit_entry.html',context)
+def software(request):
+    """软件资源"""
+    softwares = Software.objects.all().order_by('-date_added')
+    context = {'softwares':softwares}
+    return render(request,'learning_logs/software.html',context)

@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Learning Log</title>
+    <title>MTR HOME</title>
     {% bootstrap_css %}
     {% bootstrap_javascript %}
   </head>
@@ -20,11 +20,12 @@
               ...
           </button>
           <a class="navbar-brand" href="{% url 'learning_logs:index' %}">
-                Learning_log--MTRkeji</a>
+                MTR HOME</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
             <li><a href="{% url 'learning_logs:topics' %}">Topics</a></li>
+            <li><a href="{% url 'learning_logs:software' %}">软件资源</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
             {% if user.is_authenticated %}

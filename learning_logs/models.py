@@ -25,3 +25,11 @@ class Entry(models.Model):
             return self.text
         else:
             return self.text[:50]+"..."
+class Software(models.Model):
+    """软件"""
+    name = models.CharField(max_length=200)
+    links = models.CharField(max_length=200)
+    pwd = models.CharField(max_length=10)
+    date_added = models.DateTimeField(auto_now_add=True)
+    def __str__(self):
+        return self.name
